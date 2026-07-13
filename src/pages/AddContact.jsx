@@ -103,9 +103,7 @@ function handleImageChange(e) {
     return(  
         <div className="formslayout">
             <div className="card">
-                <h1>Add New Contact</h1>
-                <div className="ps">
-
+                    <h1>{id ? "Edit Contact" : "Add New Contact"}</h1>                <div className="ps">
                     <div className="pc">
                         {profileimage ? (
                         <img
@@ -222,7 +220,7 @@ function handleImageChange(e) {
                     <textarea  name="address" placeholder="Address" rows="3" value={formdata.address} onChange={handleChange}/>
                 </div>
                 <button className="save-btn" type="submit">
-                    Save Contact
+                    {id ? "Update Contact" : "Save Contact"}
                 </button>
                 </form>
                 

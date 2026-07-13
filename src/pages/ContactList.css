@@ -30,12 +30,18 @@
 .add-btn{
     width:220px;
     height:55px;
+    border:none;
     border-radius:15px;
+    background:#2563eb;
+    color:white;
     font-size:22px;
     font-weight:600;
-}.add-btn:hover{
-    transform:translateY(-3px);
+    cursor:pointer;
     transition:.3s;
+}
+.add-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
 }
 .contact-container{
     margin-top:30px;
